@@ -1,0 +1,27 @@
+/*
+                    i
+                    
+*                   1*
+*  *                2*
+*  *  *             3*
+*  *  *  *          4*
+*  *  *  *  *       5*
+ */
+
+
+//Main Function
+const main = ()=>{
+    let i, j;
+    const N = Number(window.prompt('Enter your rows'));
+    let string
+    for(i = 1; i <= N; i++){
+
+        for(j = 1; j <= i; j++){
+            string += '* ';
+        }
+
+        root.innerHTML +=  '\n';
+    }
+    console.log(string)
+}
+main();
