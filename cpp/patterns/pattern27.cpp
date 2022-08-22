@@ -15,33 +15,29 @@ using namespace std;
 int main() {
     int N, i, j;
     cin>>N;
-
     i = 1;
-    while(i <= N){
+    while(i < N){
         j = 1;
-
-        //First part
         while(j <= N - i + 1){
-            cout<<j<<"  ";
-
+            cout<<j<<" ";
             j++;
         }
 
         j = 1;
-        while(j <= (i- 1) * 2){
-            cout<<"*  ";
+        while(j <= 2 * (i-1)) {
+            cout<<'*'<<" ";
             j++;
         }
 
         j = N - i + 1;
-        while(j >= 1){
-            cout<<j<<"  ";
-
+        while(j >= 1) {
+            cout<<j<<" ";
             j--;
         }
 
-        cout<<endl;
         i++;
+
+        cout<<endl;
     }
     return 0;
 }
